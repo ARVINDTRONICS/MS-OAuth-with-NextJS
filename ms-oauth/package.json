@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@azure/msal-browser": "^4.5.0",
+    "@azure/msal-react": "^3.0.5",
     "next": "14.2.24",
     "next-auth": "^4.24.11",
     "react": "^18",

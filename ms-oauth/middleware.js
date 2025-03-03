@@ -1,8 +1,8 @@
 import { getToken } from "next-auth/jwt";
 import { NextResponse } from "next/server";
 
-// API Paths to be restricted.
-const protectedRoutes = ["/restricted"]; 
+//API Paths to be restricted.
+const protectedRoutes = ["/ai"]; 
 
 export default async function middleware(request) {
   const res = NextResponse.next();
