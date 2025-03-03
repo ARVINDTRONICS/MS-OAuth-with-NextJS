@@ -1,7 +1,7 @@
 import NextAuth from "next-auth";
 import AzureADProvider from "next-auth/providers/azure-ad";
 import { cookies } from "next/headers";
-console.log(process.env.AZURE_AD_CLIENT_ID);
+
 const authOptions = {
  
   providers: [
