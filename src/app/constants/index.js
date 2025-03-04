@@ -1,1 +1,1 @@
-export const SIGN_IN_METHODS = ["NextAuth"];
+export const SIGN_IN_METHODS = ["NextAuth","MSAL"];

@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import NextAuthProvider from "@/app/components/nextauthProvider";
-
+import MyMSALProvider from "./msal/msalProvider";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -22,7 +22,9 @@ export default function RootLayout({ children, session }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <MyMSALProvider>
           <NextAuthProvider>{children}</NextAuthProvider>
+        </MyMSALProvider>
       </body>
     </html>
   );
